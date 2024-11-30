@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Appoitment</title>
+    <link rel="stylesheet" href="Appoitment.css" />
+    <link rel="stylesheet" href="../Header/Header.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <div id="main-container">
+      <nav class="navContainer">
+        <div class="leftHeader">
+          <img
+            src="https://nirravv.github.io/Hospital-Management-Html/assets/img/logo/unity_white.jpg"
+          />
+        </div>
+        <div class="rightHeader">
+          <a href="./index.html">HOME</a>
+          <a href="./About.html">ABOUT US</a>
+          <a href="./Doctor.html">DOCTORS</a>
+          <a href="./Gallery.html">GALLERY</a>
+          <a href="./Contect_us.html">CONTACT US</a>
+          <a href="./Register.html">REGISTRATION</a>
+          <a href="./Login.html">LOGIN</a>
+          <a href="./Appoitment.html">BOOKAPOINTMENT</a>
+        </div>
+        <div class="rightHeaderIcon">
+          <h1 class="icone">...</h1>
+          <div class="megamenu">
+            <a href="./index.html">HOME</a>
+            <a href="./About.html">ABOUT US</a>
+            <a href="./Doctor.html">DOCTORS</a>
+            <a href="./Gallery.html">GALLERY</a>
+            <a href="./Contect_us.html">CONTACT US</a>
+            <a href="./Register.html">REGISTRATION</a>
+            <a href="./Login.html">LOGIN</a>
+            <a href="./Appoitment.html">BOOKAPOINTMENT</a>
+          </div>
+          <ul></ul>
+        </div>
+      </nav>
+      <div id="content-container">
+        <h2>Appointment Form</h2>
+        <div id="form-container">
+          <div id="form">
+            <form action="">
+              <fieldset>
+                <div class="row">
+                  <section>
+                    <label>Name</label>
+                    <label class="l-in"
+                      ><input type="text" name="name" required /><i
+                        class="fa-solid fa-user"
+                      ></i
+                    ></label>
+                  </section>
+                  <section>
+                    <label>Email</label>
+                    <label class="l-in"
+                      ><input type="email" name="email" required /><i
+                        class="fa-solid fa-user"
+                      ></i
+                    ></label>
+                  </section>
+                </div>
+                <section>
+                  <label>Purpouse Of Appointment</label>
+                  <label class="l-in"
+                    ><input type="text" name="subject" required /><i
+                      class="fa-solid fa-tag"
+                    ></i
+                  ></label>
+                </section>
+                <section>
+                  <label>Mobile Number</label>
+                  <label class="l-in"
+                    ><input type="number" name="Mobile number" required /><i
+                      class="fa-solid fa-phone"
+                    ></i
+                  ></label>
+                </section>
+                <section>
+                  <label class="l-in"
+                    ><select name="Department" required>
+                      <option value selected disabled>Select Department</option>
+                      <option>Cardiology</option>
+                      <option>Dermatology and Cosmetology</option>
+                      <option>General Surgery</option>
+                      <option>Health Checkup Package</option>
+                      <option>Neurology</option>
+                    </select></label
+                  >
+                </section>
+                <div class="row">
+                  <section>
+                    <label>Select Date</label>
+                    <label class="l-in"
+                      ><input type="date" name="date" required /><i
+                        class="fa-solid fa-user"
+                      ></i
+                    ></label>
+                  </section>
+                  <section>
+                    <label>Select Time</label>
+                    <label class="l-in"
+                      ><select name="Time" required>
+                        <option value selected disabled>Select Time</option>
+                        <option>8 AM - 10 AM</option>
+                        <option>10 AM - 12 PM</option>
+                        <option>12 PM - 2 PM</option>
+                        <option>2 PM - 4 PM</option>
+                        <option>4 PM - 6 PM</option>
+                        <option>6 PM - 8 PM</option>
+                        <option>8 PM - 10 PM</option>
+                      </select></label
+                    >
+                  </section>
+                </div>
+              </fieldset>
+            </form>
+            <button class="Send message">Send message</button>
+          </div>
+          <div class="Appointment-notes">
+            <div class="headline">
+              <h2>Appointment Notes</h2>
+              <p>
+                You Only Can Book Your Appointment Between
+                <span>8 AM to 10 AM</span>
+              </p>
+              <p>
+                In Other Times You Can Call Our Ambulance Which Is Available
+                24/7.
+              </p>
+            </div>
+            <div class="headline">
+              <h2>Business Hours</h2>
+              <p><span>Monday-Saturday:</span>24/7 Available.</p>
+              <p><span>Sunday:</span>4 AM to 11 PM.</p>
+            </div>
+            <div class="headline">
+              <h2>Why Choose Us?</h2>
+              <p>
+                All healthcare facilities can be accessed her under one roog,
+                making UNITY Hospital a one point contect for all your
+                healthcare needs.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <footer class="footerContainer">
+        <div class="upperfooter">
+          <div class="upperfooterOne">
+            <img
+              class="footerImg"
+              src="https://nirravv.github.io/Hospital-Management-Html/assets/img/logo/unity_white.jpg"
+            />
+            <p>
+              At Unity Hospital, we are convinced that 'quality' and 'lowest
+              cost' are not mutually exclusive when it comes to healthcare
+              delivery.
+            </p>
+            <p>
+              Our mission is to deliver high quality, affordable healthcare
+              services to the broader population in India.
+            </p>
+          </div>
+          <div class="upperfooterTwo">
+            <div class="footerTitle">Latest Posts</div>
+            <div class="footerContens">
+              <h5>Incredible content</h5>
+              <p style="color: rgb(168, 167, 167)">December 16, 2020</p>
+              <hr />
+              <h5>Latest Images</h5>
+              <p style="color: rgb(168, 167, 167)">December 16, 2020</p>
+              <hr />
+              <h5>Terms and Conditions</h5>
+              <p style="color: rgb(168, 167, 167)">December 16, 2020</p>
+            </div>
+          </div>
+          <div class="upperfooterThree">
+            <div class="footerTitle">Useful Links</div>
+            <div class="footerContens">
+              <h5>ABOUT US</h5>
+              <h5>CONTACT US</h5>
+              <h5>BOOK APPOINTMENT</h5>
+            </div>
+          </div>
+          <div class="upperfooterFour">
+            <div class="footerTitle">Contact Us</div>
+            <div class="footerContens">
+              <h4>Unity Hospital</h4>
+              <h4>Ahmedabad, IN</h4>
+              <h4>Phone: 886 666 00555</h4>
+              <h4>Email: unityhospital@gmail.com</h4>
+            </div>
+          </div>
+        </div>
+        <div class="lowerFooter">
+          <p>
+            2024 © All Rights Reserved.<span>
+              Privacy Policy | Terms of Service</span
+            >
+          </p>
+        </div>
+      </footer>
+    </div>
+    <script src="../script.js"></script>
+  </body>
+</html>

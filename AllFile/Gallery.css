@@ -1,0 +1,116 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.gallery-container{
+    max-width: 100vw;
+    display: flex;
+    padding-bottom:15px;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    /* border: 1px solid black; */
+}
+.gallery-container h2{
+    font-size: 2rem;
+    color: rgb(85, 85, 85);
+    font-weight: 400;
+    margin: 25px 0px 25px 0px;
+    font-family: sans-serif;
+    line-height: 2rem;
+}
+.img-section{
+    width: 80%;
+    display: flex;
+    gap: 0.5rem;
+    margin: auto;
+    padding: 5px 0px 5px 0px rgb(85, 85, 85);
+    justify-content: space-between;
+    flex-wrap: wrap;
+    
+
+    /* border: 1px solid green; */
+}
+.img-container{
+    width: 32%;
+    height: 310px;
+    display: flex;
+    gap: 0.2rem;
+    margin: auto;
+    align-items: self-start;
+    /* border-radius: 6px; */
+    flex-direction: column;
+    /* border: 1px solid red; */
+}
+.img-container .Images{
+    width: 100%;
+    height: 256px;
+    overflow: hidden;
+    border-radius: 10px;
+    /* transition: 0.2s; */
+    border: none;
+    box-shadow: 0px 0px 7px 1px rgba(85, 85, 85, 0.664);
+    /* border: 1px solid violet; */
+}
+.img-container .Images img{
+    width: 100%;
+    height: 100%;
+    transition: 0.2s;
+    background-size: cover;
+}
+.img-container .Images:hover img{
+    transform: scale(1.1);
+    cursor: pointer;
+    overflow: hidden;
+}
+.img-container .content{
+    width: 100%;
+    /* height: 100%; */
+    text-align: center;
+    padding: 10px 0px 10px 0px;
+    /* border: 1px solid black; */
+}
+.img-container .content h3{
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 500;
+    font-family: sans-serif;
+}
+@media screen and (max-width:760px) { 
+    .img-section{
+        width: 95%;
+    }
+    .img-container{
+        width: 32%;
+        height: 240px;
+        gap: 0.2rem;
+    }
+    
+}
+@media screen and (max-width:560px) and (min-width:424px) { 
+    .img-section{
+        width: 97%;
+    }
+    .img-container{
+        width: 49%;
+        height: 240px;
+        gap: 0.2rem;
+    }
+    .img-container .content h3{
+        font-size: 15px;
+        line-height: 20px;
+    }
+    
+}
+@media screen and (max-width:424px) { 
+    .img-container{
+        width: 80%;
+        height: 275px;
+        gap: 0.2rem;
+    }
+    .img-container .content h3{
+        font-size: 15px;
+        line-height: 20px;
+    }
+}

@@ -1,0 +1,117 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.about-main{
+    /* border: 2px solid red; */
+    width: 100%;
+    min-height: 100vh;
+    height: fit-content;
+    
+    /* align-items: center; */
+}
+.about-wrapperOne{
+    /* border: 2px solid green; */
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+    align-items: center;
+    gap: 2.5rem;
+}
+.about-wrapperOne h1{
+    font-size: 2.5rem;
+    font-weight: 400;
+}
+.about-wrapperOne h1 span{
+    color: rgb(116,197,43);
+}
+.about-wrapperOne-contens{
+    display: flex;
+    gap: 5rem;
+}
+.about-wrapperOneLeft{
+    display:flex ;
+    flex-direction: column;
+    gap: 1rem;
+    width: 48%;
+    padding-left: 3rem;
+}
+.about-wrapperTwo {
+    display: flex;
+    padding: 4rem;
+    gap: 2rem;
+}
+.about-wrapperClass{
+    display: flex;
+    gap: 1rem;
+}
+.about-wrapperClass i{
+    font-size: 2rem;
+    color: rgb(116,197,43);
+}
+.about-wrapperClass h2{
+    color: rgb(109, 109, 109);
+    font-weight: 300;
+
+}
+.about-wrapperThree{
+    /* border: 2px solid cyan; */
+    display: flex;
+    gap: 2rem;
+    align-items: center;
+    flex-direction: column;
+}
+.about-upper{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.about-upper h1{
+    border-bottom: 2px solid rgb(116,197,43);
+}
+.about-upper p{
+   text-align: center; 
+   font-size: 0.9rem;
+   width: 60%;
+   padding: 1rem;
+}
+.about-lower{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5rem;
+    padding: 4rem;
+    justify-content: center;
+    /* flex-direction: column;   */
+}
+.about-lower-content{
+    padding: 1rem;
+    width: 450px;
+    display: flex;
+    gap: 2rem;
+    box-shadow: 2px 4px 4px gray;
+}
+.about-lower-content i{
+    font-size: 2.4rem;
+    color:  rgb(116,197,43);
+}
+.lower-content{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+.lower-content h2{
+    font-weight:400;
+}
+
+@media (min-width: 280px) and (max-width: 1000px) {
+    .about-wrapperOne-contens{
+        flex-direction: column;
+    }
+    .about-wrapperOneLeft{
+        width: 90%; 
+    }
+    .about-wrapperTwo{
+        flex-wrap: wrap;
+    }
+}
